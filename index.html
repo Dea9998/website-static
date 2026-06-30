@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AVORA - JEWELRY</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+
+      <div class="logo">
+        <img src="logoheaderuntara.png" alt="Logo AVORA" class="logo-img" />
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#how-to-order">How to Order</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="https://wa.me/6285133126097" class="btn btn-wa navbar-wa" target="_blank">
+        Order Now
+      </a>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="hero-text">
+          <p class="hero-tag">Crafted to Shine With You</p>
+          <h1>SHINE <span class="highlight">WITH QUIET</span><br>ELEGANCE</h1>
+          <p class="subtitle">
+            We believe luxury isn't about high price tags — it's about how a single detail makes you look unmistakably different.
+          </p>
+          <div class="hero-buttons">
+            <a href="https://wa.me/6285133126097" class="btn btn-wa" target="_blank">
+              Order via WhatsApp
+            </a>
+            <a href="#products" class="btn btn-outline">View Products</a>
+          </div>
+        </div>
+
+        <img src="logountara.jpeg" alt="AVORA Jewelry" class="hero-banner" />
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-images">
+          <img src="fototoko.jpeg" alt="Main Photo" class="img-main" />
+          <img src="fotoruang.jpeg" alt="Secondary Photo" class="img-small" />
+          <div class="experience-badge">
+            <strong>6+</strong>
+            <span>Years of<br>Experience</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p class="section-tag">About Us</p>
+          <h2 class="about-title">We're Here for<br><span class="highlight">Exceptional Quality</span></h2>
+          <p class="about-description">
+            Every piece is crafted with meticulous detail and a personal touch, delivering unique designs that are elegant, timeless, and full of character made to complete every style.
+          </p>
+
+          <ul class="about-checks">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Handmade with premium-grade detail and quality in every piece</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Elegant, timeless designs crafted to complement any style</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Made to be a unique and meaningful expression of your identity</span>
+            </li>
+          </ul>
+
+          <a href="#products" class="btn-outline-dark" style="margin-top: 12px;">View Products</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="container">
+
+      <p class="section-tag">Our Selection</p>
+      <h2 class="section-title">Featured Products</h2>
+      <p class="section-subtitle">Made from hand-picked materials, crafted with care.</p>
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img src="fotocincin.jpeg" alt="Serene Ring" class="product-img" onclick="bukaModal(this.src)" />
+            <div class="product-badge">Best Seller</div>
+          </div>
+          <div class="product-info">
+            <h3>Serene</h3>
+            <p>A brief product description. Crafted from premium, carefully selected materials.</p>
+            <div class="product-footer">
+              <span class="price">Rp 199,000</span>
+              <a href="https://wa.me/6285133126097?text=Hello,%20I%20would%20like%20to%20order%20Serene" class="btn-order" target="_blank">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img src="fotokalung.jpeg" alt="Product 2" class="product-img" onclick="bukaModal(this.src)" />
+          </div>
+          <div class="product-info">
+            <h3>Asterra</h3>
+            <p>Available in various sizes and variants to suit your taste.</p>
+            <div class="product-footer">
+              <span class="price">Rp 89,000</span>
+              <a href="https://wa.me/6285133126097?text=Hello,%20I%20would%20like%20to%20order%20Product%202" class="btn-order" target="_blank">Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img src="fotoanting.jpeg" alt="Product 3" class="product-img" onclick="bukaModal(this.src)" />
+            <div class="product-badge new">New</div>
+          </div>
+          <div class="product-info">
+            <h3>Velisse</h3>
+            <p>Our latest addition — highly anticipated by many of our loyal customers.</p>
+            <div class="product-footer">
+              <span class="price">Rp 199,000</span>
+              <a href="https://wa.me/6285133126097?text=Hello,%20I%20would%20like%20to%20order%20Product%203" class="btn-order" target="_blank">Order</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+
+      <p class="section-tag">Gallery</p>
+      <h2 class="section-title">Products & Behind the Scenes</h2>
+      <p class="section-subtitle">Take a closer look at our pieces and the crafting process.</p>
+
+      <div class="gallery-grid">
+        <img src="galeri1.jpeg" alt="Gallery 1" class="gallery-img" onclick="bukaModal(this.src)" />
+        <img src="galeri2.jpeg" alt="Gallery 2" class="gallery-img" onclick="bukaModal(this.src)" />
+        <img src="galeri3.jpeg" alt="Gallery 3" class="gallery-img" onclick="bukaModal(this.src)" />
+        <img src="galeri4.jpeg" alt="Gallery 4" class="gallery-img" onclick="bukaModal(this.src)" />
+        <img src="galeri5.jpeg" alt="Gallery 5" class="gallery-img" onclick="bukaModal(this.src)" />
+        <img src="galeri6.jpeg" alt="Gallery 6" class="gallery-img" onclick="bukaModal(this.src)" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+
+      <p class="section-tag">Customer Reviews</p>
+      <h2 class="section-title">What They're Saying</h2>
+      <p class="section-subtitle">Your satisfaction is our top priority.</p>
+
+      <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>
+            "Gelang sama cincinnya bener-bener cakep parah 😭✨ Awalnya takut keliatan murahan pas dipake, ternyata malah elegan banget dan ngasih kesan clean luxury gitu. Bahannya juga keliatan bagus, dipake daily masih nyaman. Menurutku ini worth it banget sih sesuai harga, bahkan keliatan lebih mahal dari aslinya 🫶"
+          </blockquote>
+          <div class="reviewer-info">
+            <div class="avatar">AL</div>
+            <div>
+              <div class="reviewer-name">Alysa</div>
+              <div class="reviewer-title">Verified Buyer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>
+            "JUJUR suka banget sama modelnyaa 😭 Cincinnya simple tapi classy, gelangnya juga pas dipake bikin outfit keliatan lebih mahal. Aku biasanya picky soal aksesoris, tapi yang ini beneran masuk selera. Untuk harga segini menurutku udah dapet kualitas dan model yang super oke sih ✨"
+          </blockquote>
+          <div class="reviewer-info">
+            <div class="avatar">CI</div>
+            <div>
+              <div class="reviewer-name">Cia</div>
+              <div class="reviewer-title">Verified Buyer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>
+            "First impression berbelanja di Avora sangat memuaskan. Mulai dari pelayanan yang responsif dan ramah, kualitas produk yang terasa premium, hingga packaging yang elegan dan mewah benar-benar memberikan pengalaman belanja yang eksklusif. Detail finishing pada perhiasannya juga sangat baik, terlihat refined dan sophisticated saat digunakan. Sangat recommended untuk yang mencari jewelry dengan kualitas dan aesthetic luxury."
+          </blockquote>
+          <div class="reviewer-info">
+            <div class="avatar">PR</div>
+            <div>
+              <div class="reviewer-name">Putri</div>
+              <div class="reviewer-title">Verified Buyer</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO ORDER -->
+  <section class="how-to-order" id="how-to-order">
+    <div class="container">
+
+      <p class="section-tag">How to Order</p>
+      <h2 class="section-title">3 Easy Steps</h2>
+      <p class="section-subtitle">Place your order in just three simple steps!</p>
+
+      <div class="steps-grid">
+
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+          </div>
+          <h3>Message Us on WhatsApp</h3>
+          <p>Chat with us on WhatsApp and let us know which product and quantity you'd like.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+              <line x1="1" y1="10" x2="23" y2="10"></line>
+            </svg>
+          </div>
+          <h3>Confirm & Pay</h3>
+          <p>We'll send you the total including shipping. Pay via bank transfer or e-wallet.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <h3>Receive Your Order</h3>
+          <p>Your order is carefully packed and shipped to your address. Estimated 1–3 business days.</p>
+        </div>
+
+      </div>
+
+      <div class="order-cta">
+        <a href="https://wa.me/6285133126097?text=Hello,%20I%20would%20like%20to%20place%20an%20order!" class="btn btn-wa btn-large" target="_blank">
+          Start Ordering Now
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+
+      <p class="section-tag">Get In Touch</p>
+      <h2 class="section-title">Have a Question?</h2>
+      <p class="section-subtitle">We're here to help you every day!</p>
+
+      <div class="contact-grid">
+
+        <div class="contact-info">
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/6285133126097" target="_blank">+62 851-3312-6097</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <div>
+              <strong>Instagram</strong>
+              <a href="https://www.instagram.com/avorajwlry?igsh=MXVlZ216dnhpanJ2ZA==" target="_blank">@avorajwlry</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <strong>Address</strong>
+              <span>Jalan Pejuang No. 12, Kota Tangerang</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <strong>Opening Hours</strong>
+              <span>Monday – Saturday: 08:00 – 20:00<br>Sunday: 09:00 – 17:00</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="contact-map">
+          <p class="map-title">Find Us on the Map</p>
+          <p class="map-hint">
+            Replace this section with a Google Maps embed!<br>
+            How to: open Google Maps → Share → Embed a map → copy the &lt;iframe&gt; code
+          </p>
+          <a href="https://maps.google.com" class="btn-outline-dark" target="_blank">
+            Open in Google Maps
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand-col">
+          <p class="footer-brand">AVORA</p>
+          <p class="footer-tagline">JEWELRY.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a href="https://wa.me/6285133126097" target="_blank">WhatsApp</a>
+          <a href="https://www.instagram.com/avorajwlry?igsh=MXVlZ216dnhpanJ2ZA==" target="_blank">Instagram</a>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AVORA. Made with love by [Student Name & NIM]</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- IMAGE MODAL -->
+  <div id="modalGambar" class="modal" onclick="tutupModal()">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="imgModal" alt="Preview" />
+  </div>
+
+  <script>
+    function bukaModal(src) {
+      document.getElementById("modalGambar").style.display = "flex";
+      document.getElementById("imgModal").src = src;
+    }
+    function tutupModal() {
+      document.getElementById("modalGambar").style.display = "none";
+    }
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById("menu-toggle").checked = false;
+      });
+    });
+  </script>
+
+</body>
+</html>
